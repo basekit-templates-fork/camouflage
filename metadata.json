@@ -1,0 +1,9 @@
+{
+	"name":"Trvl",
+	"directory":"trvl",
+	"thumbnail":"/trvl/trvl.jpg",
+	"screenshot":"/trvl/trvl.jpg",
+	"pageTypes":[],
+	"defaultColorSwatch":"Warmth 1",
+	"defaultFontSwatch":"Lato"
+}
