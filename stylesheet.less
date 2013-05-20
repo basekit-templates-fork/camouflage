@@ -419,7 +419,6 @@ hr.line.align-right {
 
 .widget.extendednavigation 
 {
-    float: right;
 }
 
 .widget.extendednavigation ul {
@@ -443,7 +442,7 @@ hr.line.align-right {
     font-size:@font-swatch6-font-size;    
 }
 
-.widget.extendednavigation ul li.folder a {
+.widget.extendednavigation ul li.folder {
     background-image: image('/trvl/images/arrow-down.png');
     background-position: right center;
     background-repeat: no-repeat;
@@ -453,8 +452,8 @@ hr.line.align-right {
 .widget.extendednavigation ul li.folder .text 
 {
     display:inline-block;
-    padding: 18px 0px;
-    color: @color-swatch4;
+    padding: 14px 20px;
+    color: @font-swatch6-color;
 }
 
 .widget.extendednavigation ul li.folder ul li .text 
@@ -509,7 +508,9 @@ hr.line.align-right {
     -ms-transition: all .3s ease-in-out;
 }
 
-
+.widget.extendednavigation ul.align-right li.folder {
+    background-position: left center;
+}
 
 
 /* Twitter CSS */
