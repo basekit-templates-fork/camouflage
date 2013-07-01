@@ -2,7 +2,7 @@
 	"name":"Trvl",
 	"thumbnail":"trvl.jpg",
 	"screenshot":"trvl.jpg",
-	"pageTypes":[],
+	"pageTypes":["about"],
 	"defaultColorSwatch":"Warmth 1",
 	"defaultFontSwatch":"Lato"
 }
