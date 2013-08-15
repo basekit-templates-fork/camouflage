@@ -132,7 +132,10 @@ ul, ol, li {
 
 .bk-pt-default .extendednavigation ul li:hover > ul {
   border: 1px solid darken(@color-swatch2,5%);
-  border-top: 0;
+}
+
+.bk-pt-default .widget.extendednavigation ul li:hover > ul li:first-child {
+  border-top: none;
 }
 
 
@@ -855,7 +858,7 @@ footer p {
     right: 0px;
     margin-bottom: -50px;
     background:@color-swatch1;
-    background: rgba(0, 0, 0, 0.5);
+    background: @color-swatch6;
     padding: 10px;
     text-align: center;
     -webkit-transition: all 0.3s ease-out;
@@ -1061,7 +1064,6 @@ hr.line.align-right {
 .widget.twitter .twitter-profile-pic {
     float: left;
     margin-right: 20px;
-    height: 100px;
 }
 
 .widget.twitter .twitter-profile-pic a img {
@@ -1124,6 +1126,7 @@ hr.line.align-right {
     text-indent: 8px;
     margin-top: 6px;
     margin-bottom: 30px;
+    padding: 0;
 }
 
 input {
@@ -1146,6 +1149,7 @@ input {
     margin-top: 6px;
     margin-bottom: 20px;
     resize: none;
+    padding: 0;
 }
 
 textarea {
@@ -1308,74 +1312,96 @@ textarea {
 }
 
 
-
 /* ===============================
    SLIDESHOW WIDGET
    =============================== */
-
-.widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next
-{
-  display: none;
-  position: absolute;
-  width: 14%;
-  height: 14%; 
-  font-size: 0;
-  z-index: 11;
-  text-indent: -99999px;  
+.widget.responsiveslideshow .slideshow-image-list {
+    height: 500px;
 }
 
-.widget.responsiveslideshow .slideshow-widget .btn-prev
-{
+.widget.responsiveslideshow .slideshow-widget {
+    background-color: transparent;
+}
+.widget.responsiveslideshow span.inner img {
+    width:100%;
+    height:auto;
+}
+
+.widget.responsiveslideshow .image-wrapper {
+    padding:15px;
+}
+
+.widget.responsiveslideshow .crop .image-wrapper {
+    padding:0;
+}
+
+.widget.responsiveslideshow .content-wrapper {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:auto;
+    background-color: @color-swatch6; 
+}
+
+.widget.responsiveslideshow .title {
+    display: inline-block;
+    padding:10px 15px 0 15px;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height:bkscale(@font-swatch5-line-height, 0.55);
+    color: @color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+.widget.responsiveslideshow .description {
+    display: block;
+    padding: 0 15px 15px;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height:bkscale(@font-swatch5-line-height, 0.55);
+    color: @color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev, 
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+    font-size: 0;
+    z-index: 11;
+    text-indent: -99999px;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev {
   left: 10px;
   background: image('/images/slideshow-arrow-left.svg') no-repeat center left;
+  background-size: contain;
 }
 
-.widget.responsiveslideshow .slideshow-widget .btn-next
-{
+.widget.responsiveslideshow .slideshow-widget .btn-next {
   right: 10px;
   background: image('/images/slideshow-arrow-right.svg') no-repeat center right; 
+  background-size: contain;   
 }
 
-.widget.responsiveslideshow .slideshow-widget:hover .btn-prev, .widget.responsiveslideshow .slideshow-widget:hover .btn-next
-{
-  top: 43%;
-  display: block;
-  cursor: pointer;
-}
-
-.widget.responsiveslideshow .slideshow-widget-controls
-{
-  margin-top: 10px;
-  text-align: center;
-}
-
-.slideshow-empty {
-    padding: 10px;
+.widget.responsiveslideshow .slideshow-widget-controls {
+  margin: 10px 0;
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-play
 {
-  display: none;
-  position: absolute;
-  cursor: pointer;
-  z-index: 10;
-  background: image('/images/slideshow-play.png') center no-repeat;
-  background-size: 100%;
-  width: 14%;
-  height: 14%;
-  top: 43%;
-  left: 43%;
-}
-
-.widget.responsiveslideshow .slideshow-widget:hover .btn-play
-{
-  display:block;
+    background: image('/images/slideshow-play.png') center no-repeat;
+    background-size: 100%;
+    border-radius:10px;
+    font-size:0;
+    text-indent: -99999px;
 }
 
 .widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause
 {
-  background: image('/images/slideshow-pause.png') center no-repeat;
-  background-size: 100%;  
+    background: image('/images/slideshow-pause.png') center no-repeat;
+    background-size: 100%;  
 }
 
 .widget.responsiveslideshow .slideshow-widget-controls .dot
@@ -1392,39 +1418,12 @@ textarea {
 {
    background-color: darken(@color-swatch2,20%);}
 
-.widget.responsiveslideshow .slideshow-widget .btn-prev.disabled, .widget.responsiveslideshow .slideshow-widget .btn-next.disabled, .widget.responsiveslideshow .slideshow-widget .btn-play.disabled
-{
-  opacity:0.4;
-  cursor: default;
-}
-
 .widget.responsiveslideshow .dot {
   border: none;
-    -webkit-border-radius: 50px;
+  -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
 }
-
-.widget.responsiveslideshow .content-wrapper {
-  position: relative !important;
-  margin-top:350px;
-  width: 100%;
-  text-align: center;
-  background: rgba(0,0,0,0.3);
-  padding:10px 0;
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color: #FFFFFF;
-  letter-spacing: @font-swatch5-letter-spacing;
-}
-
-.widget.responsiveslideshow .content-wrapper .description {
-  display: none;
-}
-
-
 
 /* ===============================
    LINKED IN
@@ -1668,51 +1667,87 @@ footer .widget.profile .twitter span {
 }
 
 span.bk-socialicons-twitter a {
-    background-image: image('/images/socialicons-twitter.png')
+    background-image: image('/images/socialicons-twitter.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-linkedin a {
-    background-image: image('/images/socialicons-linkedin.png');
+    background-image: image('/images/socialicons-linkedin.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-facebook a {
-    background-image: image('/images/socialicons-facebook.png');
+    background-image: image('/images/socialicons-facebook.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-rss a {
-    background-image: image('/images/socialicons-rssfeed.png');
+    background-image: image('/images/socialicons-rss.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-googleplus a {
-    background-image: image('/images/socialicons-googleplus.png');
+    background-image: image('/images/socialicons-googleplus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-youtube a {
-    background-image: image('/images/socialicons-youtube.png');
+    background-image: image('/images/socialicons-youtube.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-twitter a:hover {
-    background-image: image('/images/socialicons-twitter-hov.png');
+    background-image: image('/images/socialicons-twitter-hov.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-linkedin a:hover {
-    background-image: image('/images/socialicons-linkedin-hov.png');
+    background-image: image('/images/socialicons-linkedin-hov.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-facebook a:hover {
-    background-image: image('/images/socialicons-facebook-hov.png');
+    background-image: image('/images/socialicons-facebook-hov.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-rss a:hover {
-    background-image: image('/images/socialicons-rssfeed-hov.png');
+    background-image: image('/images/socialicons-rss-hov.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-googleplus a:hover {
-    background-image: image('/images/socialicons-googleplus-hov.png');
+    background-image: image('/images/socialicons-googleplus-hov.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-youtube a:hover {
-    background-image: image('/images/socialicons-youtube-hov.png');
+    background-image: image('/images/socialicons-youtube-hov.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
 }
 
 
@@ -1859,9 +1894,15 @@ span.bk-socialicons-youtube a:hover {
 
   .widget.gallery ul.gallery-widget li
   {
-      width: 50%;
-      padding-bottom: 50%;
+    width: 50%;
+    padding-bottom: 50%;
   }
+
+   /* Slideshow */
+  .widget.responsiveslideshow .slideshow-image-list {
+      height: 400px;
+  }
+
 
 }
 
@@ -2008,6 +2049,20 @@ span.bk-socialicons-youtube a:hover {
     line-height :bkscale(@font-swatch9-line-height, 0.7);
   }
 
+  /* SLIDESHOW */
+
+  .widget.responsiveslideshow .title {
+    padding-bottom:13px;
+  }
+
+  .widget.responsiveslideshow .description {
+    display:none;
+  }
+
+  .widget.responsiveslideshow .slideshow-image-list {
+      height: 200px;
+  }
+
 /* ===============================
    CLICK TO CALL - ONLY SHOWS IN IPHONE
    =============================== */
@@ -2022,11 +2077,6 @@ span.bk-socialicons-youtube a:hover {
   .widget.gallery p
   {
     padding: 10px;
-  }
-
-  .widget.gallery ul.gallery-widget li
-  {
-    width: 96%;
   }
 
 
