@@ -1349,16 +1349,24 @@ textarea {
     text-indent: -99999px;
 }
 
-.widget.responsiveslideshow .slideshow-widget .btn-prev {
+.svg .widget.responsiveslideshow .slideshow-widget .btn-prev {
   left: 10px;
   background: image('/images/slideshow-arrow-left.svg') no-repeat center left;
   background-size: contain;
 }
 
-.widget.responsiveslideshow .slideshow-widget .btn-next {
+.widget.responsiveslideshow .slideshow-widget .btn-prev {
+  background: image('/images/slideshow-arrow-left.png') no-repeat center left;
+}
+
+.svg .widget.responsiveslideshow .slideshow-widget .btn-next {
   right: 10px;
   background: image('/images/slideshow-arrow-right.svg') no-repeat center right; 
   background-size: contain;   
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+  background: image('/images/slideshow-arrow-right.png') no-repeat center right;   
 }
 
 .widget.responsiveslideshow .slideshow-widget-controls {
@@ -1368,7 +1376,7 @@ textarea {
 .widget.responsiveslideshow .slideshow-widget .btn-play
 {
     background: image('/images/slideshow-play.png') center no-repeat;
-    background-size: 100%;
+    background-size: contain;
     border-radius:10px;
     font-size:0;
     text-indent: -99999px;
@@ -1377,7 +1385,7 @@ textarea {
 .widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause
 {
     background: image('/images/slideshow-pause.png') center no-repeat;
-    background-size: 100%;  
+    background-size: contain;  
 }
 
 .widget.responsiveslideshow .slideshow-widget-controls .dot
@@ -1408,7 +1416,6 @@ textarea {
 .container-outer .li-profile-container {
   padding: 0;
   margin: 0;
-
 }
 
 .no-profile {
