@@ -742,6 +742,8 @@ footer p {
     display:block;
     max-width: 100%;
     margin: 0 auto;
+    border: 0;
+    border-width: 0;
 }
 
 .widget.image {
@@ -921,14 +923,6 @@ hr.line.align-right {
 
 
 /* ===============================
-   CLICK TO CALL - DOESN'T SHOW IN DESKTOP NOR IPAD
-   =============================== */
-
-  .widget.clicktocall {
-     display: none;
-   }
-
-/* ===============================
    CLICK TO CALL WIDGET
    =============================== */
 
@@ -937,34 +931,16 @@ hr.line.align-right {
 }
 
 .widget.clicktocall a {
-  background-image: image('/images/ic-desktop-call-mob.png');
-  background-color: @font-swatch7-background-color;
-  background-position: 10px;
-  background-repeat:no-repeat;
-  padding: 10px 10px 10px 38px;
   margin: 2.2em auto;
-  border: 2px solid darken(@color-swatch3,5%);
-  -webkit-border-radius: 30px;
-     -moz-border-radius: 30px;
-          border-radius: 30px;
-  box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
-  font-family: @font-swatch7-font-family;
-  font-size: @font-swatch7-font-size;
-  font-weight:@font-swatch7-font-weight;
-  color: @font-swatch7-color;
+  border: none;
+  font-family: @font-swatch5-font-family;
+  font-size: @font-swatch5-font-size;
+  font-weight:@font-swatch5-font-weight;
+  color: @font-swatch5-color;
   text-decoration: none;
-  letter-spacing: 1px;
-  text-shadow: 0 1px 0px rgba(0,0,0,0.3);
+  cursor: default;
 }
 
-.widget.clicktocall a:hover {
-  background-color: @font-swatch7-background-color-hover;
-  background-position: 10px;
-  color: @font-swatch7-color;
-  padding: 10px 10px 10px 38px;
-  cursor: pointer;
-  text-decoration: none;
-}
 
 .widget.clicktocall a.justifyleft
 {
@@ -1553,6 +1529,9 @@ footer .widget.profile .twitter span {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
+    background-position: center;
+    margin-bottom: 6px;
+    background-size: 22px;
 }
 
 .widget.profile .bk-profile-socialicons span a:hover {
@@ -1566,6 +1545,172 @@ footer .widget.profile .twitter span {
     margin-right: 6px;
     background-repeat: no-repeat;
 }
+
+/* ===============================
+   SOCIAL BAR WIDGET
+   =============================== */
+
+.widget.socialicons {
+    padding: 0;
+    font-size:1em;
+    font-family:@font-swatch7-font-family;
+}
+
+.widget.socialicons a {
+    text-decoration: none;
+    text-indent: -9999px;
+    height: 33px;
+    width: 33px;
+    background-color: #FFFFFF;
+    border: 2px solid @color-swatch5;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.widget.socialicons a:hover {
+  background-color: @color-swatch5;
+}
+
+
+.widget.socialicons span a {
+    display: inline-block;
+    margin-right: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 6px;
+    background-size: 22px;
+}
+
+/* SVG ICONS */
+
+.svg .widget.socialicons span.bk-socialicons-twitter a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
+    background-image: image('/images/social/socialicons-twitter.svg');
+}
+
+.svg .widget.socialicons span.bk-socialicons-linkedin a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
+    background-image: image('/images/social/socialicons-linkedin.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-facebook a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
+    background-image: image('/images/social/socialicons-facebook.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-rss a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
+    background-image: image('/images/social/socialicons-rss.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-googleplus a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
+    background-image: image('/images/social/socialicons-googleplus.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-youtube a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
+    background-image: image('/images/social/socialicons-youtube.svg')
+}
+
+/* PNG ICONS */
+
+.widget.socialicons span.bk-socialicons-twitter a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
+    background-image: image('/images/social/socialicons-twitter.png');
+}
+
+.widget.socialicons span.bk-socialicons-linkedin a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
+    background-image: image('/images/social/socialicons-linkedin.png')
+}
+
+.widget.socialicons span.bk-socialicons-facebook a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
+    background-image: image('/images/social/socialicons-facebook.png')
+}
+
+.widget.socialicons span.bk-socialicons-rss a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
+    background-image: image('/images/social/socialicons-rss.png')
+}
+
+.widget.socialicons span.bk-socialicons-googleplus a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
+    background-image: image('/images/social/socialicons-googleplus.png')
+}
+
+.widget.socialicons span.bk-socialicons-youtube a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
+    background-image: image('/images/social/socialicons-youtube.png')
+}
+
+/* SVG A:HOVER ICONS */
+
+.svg .widget.socialicons span.bk-socialicons-twitter a:hover,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a:hover {
+    background-image: image('/images/social/socialicons-twitter-hov.svg');
+}
+
+.svg .widget.socialicons span.bk-socialicons-linkedin a:hover,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a:hover {
+    background-image: image('/images/social/socialicons-linkedin-hov.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-facebook a:hover,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a:hover {
+    background-image: image('/images/social/socialicons-facebook-hov.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-rss a:hover,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-rss a:hover {
+    background-image: image('/images/social/socialicons-rss-hov.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-googleplus a:hover,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a:hover {
+    background-image: image('/images/social/socialicons-googleplus-hov.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-youtube a:hover,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a:hover {
+    background-image: image('/images/social/socialicons-youtube-hov.svg')
+}
+
+/* PNG A:HOVER ICONS */
+
+.widget.socialicons span.bk-socialicons-twitter a:hover,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a:hover {
+    background-image: image('/images/social/socialicons-twitter-hov.png');
+}
+
+.widget.socialicons span.bk-socialicons-linkedin a:hover,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a:hover {
+    background-image: image('/images/social/socialicons-linkedin-hov.png')
+}
+
+.widget.socialicons span.bk-socialicons-facebook a:hover,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a:hover {
+    background-image: image('/images/social/socialicons-facebook-hov.png')
+}
+
+.widget.socialicons span.bk-socialicons-rss a:hover,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-rss a:hover {
+    background-image: image('/images/social/socialicons-rss-hov.png')
+}
+
+.widget.socialicons span.bk-socialicons-googleplus a:hover,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a:hover {
+    background-image: image('/images/social/socialicons-googleplus-hov.png')
+}
+
+.widget.socialicons span.bk-socialicons-youtube a:hover,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a:hover {
+    background-image: image('/images/social/socialicons-youtube-hov.png')
+}
+
+
 
 
 /* SINGLE EMAIL FORM IN FOOTER*/
@@ -1633,122 +1778,7 @@ footer .widget.profile .twitter span {
 }
 
 
-/* ===============================
-   SOCIAL BAR WIDGET
-   =============================== */
 
-.widget.socialicons {
-    padding: 0;
-    font-size:1em;
-    font-family:@font-swatch7-font-family;
-}
-
-.widget.socialicons a {
-    text-decoration: none;
-    text-indent: -9999px;
-    height: 33px;
-    width: 33px;
-    background-color: #FFFFFF;
-    border: 2px solid @color-swatch5;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-}
-
-.widget.socialicons a:hover {
-  background-color: @color-swatch5;
-}
-
-
-.widget.socialicons span a {
-    display: inline-block;
-    margin-right: 6px;
-    background-repeat: no-repeat;
-}
-
-span.bk-socialicons-twitter a {
-    background-image: image('/images/socialicons-twitter.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px;
-}
-
-span.bk-socialicons-linkedin a {
-    background-image: image('/images/socialicons-linkedin.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px;
-}
-
-span.bk-socialicons-facebook a {
-    background-image: image('/images/socialicons-facebook.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px;
-}
-
-span.bk-socialicons-rss a {
-    background-image: image('/images/socialicons-rss.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px;
-}
-
-span.bk-socialicons-googleplus a {
-    background-image: image('/images/socialicons-googleplus.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px;
-}
-
-span.bk-socialicons-youtube a {
-    background-image: image('/images/socialicons-youtube.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px;
-}
-
-span.bk-socialicons-twitter a:hover {
-    background-image: image('/images/socialicons-twitter-hov.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px;
-}
-
-span.bk-socialicons-linkedin a:hover {
-    background-image: image('/images/socialicons-linkedin-hov.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px;
-}
-
-span.bk-socialicons-facebook a:hover {
-    background-image: image('/images/socialicons-facebook-hov.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px;
-}
-
-span.bk-socialicons-rss a:hover {
-    background-image: image('/images/socialicons-rss-hov.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px;
-}
-
-span.bk-socialicons-googleplus a:hover {
-    background-image: image('/images/socialicons-googleplus-hov.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px;
-}
-
-span.bk-socialicons-youtube a:hover {
-    background-image: image('/images/socialicons-youtube-hov.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 22px;
-}
 
 
 
@@ -2070,6 +2100,61 @@ span.bk-socialicons-youtube a:hover {
   .widget.clicktocall {
      display: block;
    }
+
+  .widget.clicktocall a {
+  background-image: image('/images/ic-desktop-call-mob.png');
+  background-color: @font-swatch7-background-color;
+  background-position: 10px;
+  background-repeat:no-repeat;
+  padding: 10px 10px 10px 38px;
+  margin: 2.2em auto;
+  border: 2px solid darken(@color-swatch3,5%);
+  -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+          border-radius: 30px;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight:@font-swatch7-font-weight;
+  color: @font-swatch7-color;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 0px rgba(0,0,0,0.3);
+}
+
+.widget.clicktocall a:hover {
+  background-color: @font-swatch7-background-color-hover;
+  background-position: 10px;
+  color: @font-swatch7-color;
+  padding: 10px 10px 10px 38px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+  .widget.clicktocall a.justifyleft {
+    text-align: left;
+  }
+
+  .widget.clicktocall a.justifycenter {
+    text-align: center;
+  }
+
+  .widget.clicktocall a.justifyright {
+    text-align: right;
+  }
+
+  .widget.clicktocall a.justifyfull {
+    text-align: justify;
+  }
+
+  .widget.clicktocall a.italic { 
+    font-style: italic;
+  }
+
+  .widget.clicktocall a.bold {
+    font-weight: bold;
+  }
+
 
 
   /* GALLERY */
