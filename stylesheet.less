@@ -298,6 +298,7 @@ footer p {
   float: right;
   position: relative;
   padding-top: 23px;
+  max-width: 690px;
 }
 
 
@@ -741,7 +742,6 @@ footer p {
 {
     display:block;
     max-width: 100%;
-    margin: 0 auto;
     border: 0;
     border-width: 0;
 }
@@ -757,7 +757,6 @@ footer p {
     font-size: @font-swatch4-font-size;
     color:  @font-swatch5-color;
     text-decoration: none;
-    text-align: center;
     text-transform: uppercase;
     line-height: @font-swatch4-line-height;
 }
@@ -773,7 +772,6 @@ footer p {
 .widget.image span.image-description {
     display: block;
     margin:0 0 10px;
-    text-align: center;
     font-family: @font-swatch5-font-family;
     font-weight: @font-swatch5-font-weight;
     font-size: @font-swatch5-font-size;
@@ -1528,7 +1526,8 @@ footer .widget.profile .twitter span {
 
 .widget.profile .bk-profile-socialicons span a {
     text-decoration: none;
-    text-indent: -9999px;
+    text-indent: 9999px;
+    white-space: nowrap;
     height: 33px;
     width: 33px;
     background-color: #FFFFFF;
@@ -1565,7 +1564,8 @@ footer .widget.profile .twitter span {
 
 .widget.socialicons a {
     text-decoration: none;
-    text-indent: -9999px;
+    text-indent: 9999px;
+    white-space: nowrap;
     height: 33px;
     width: 33px;
     background-color: #FFFFFF;
@@ -1831,6 +1831,7 @@ footer .widget.profile .twitter span {
   /* NAV */
 
   .widget.extendednavigation {
+    max-width: 100%;
     width: 100%;
     padding: 0;
     margin-top: 0;
