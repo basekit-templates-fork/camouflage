@@ -4,8 +4,8 @@
 	"screenshot":"trvl.png",
     "tags": {
     "en": ["colorful", "bright", "travel", "business", "holiday", "colourful"],
-    "es": ["colorido", "claro", "turismo", "corporativo", "vacaciones","colorido"],
-    "br": ["colorido", "claro", "turismo", "corporativo", "ferias","colorido"]
+    "es": ["colorido", "claro", "turismo", "corporativo", "vacaciones"],
+    "br": ["colorido", "claro", "turismo", "corporativo", "ferias"]
     },
 	"colorSwatches":
     {
