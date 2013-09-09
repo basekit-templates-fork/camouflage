@@ -2,6 +2,11 @@
 	"name":"Trvl",
 	"thumbnail":"trvl.png",
 	"screenshot":"trvl.png",
+    "tags": {
+    "en": ["colorful", "bright", "travel", "business", "holiday", "colourful"],
+    "es": ["colorido", "claro", "turismo", "corporativo", "vacaciones","colorido"],
+    "br": ["colorido", "claro", "turismo", "corporativo", "ferias","colorido"]
+    },
 	"colorSwatches":
     {
         "Swatch 1": {
