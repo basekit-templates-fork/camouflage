@@ -27,7 +27,13 @@
 
 	<link rel="stylesheet" href="//{{env.assetDomain}}/templates/common/responsive-columns.css" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	{% include basekit.headScript %}
+</head>
+<body class="{{ page.backgroundClass }}">
+
+	{% block content %}
+	{% endblock %}
+
 	<script>
 				$(function() {
 					var pull 		= $('.pull');
@@ -50,14 +56,7 @@
 					$(window).bind('resize', menuToggle);
 		            $(window).bind('orientationchange', menuToggle);
 				});
-			</script>
-
-	{% include basekit.headScript %}
-</head>
-<body class="{{ page.backgroundClass }}">
-
-	{% block content %}
-	{% endblock %}
+	</script>
 
 	{% include basekit.bodyScript %}
 </body>

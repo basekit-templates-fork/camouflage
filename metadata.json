@@ -3,9 +3,9 @@
 	"thumbnail":"trvl.png",
 	"screenshot":"trvl.png",
     "tags": {
-    "en": ["colorful", "bright", "travel", "business", "holiday", "colourful"],
-    "es": ["colorido", "claro", "turismo", "corporativo", "vacaciones"],
-    "br": ["colorido", "claro", "turismo", "corporativo", "ferias"]
+    "en": ["colorful", "bright", "travel", "business", "holiday", "colourful", "stylish", "agency", "magazine", "creative", "elegant", "professional", "sophisticated", "media", "sans-serif"],
+    "es": ["colorido", "claro", "turismo", "corporativo", "vacaciones", "estilo", "agencia", "revista", "creativo", "elegante", "profesional", "sofisticado", "comunicacion", "sans-serif"],
+    "br": ["colorido", "claro", "turismo", "corporativo", "ferias", "estilo", "agência", "revista", "criativo", "elegante", "profissional", "sofisticado", "mídia", "sans-serif"]
     },
 	"colorSwatches":
     {
