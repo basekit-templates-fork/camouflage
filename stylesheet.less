@@ -1,3 +1,5 @@
+@import templatecommon('/paypal.less');
+
 body {
   background-color: @color-swatch1;
   background-image:image('/images/ricepaper2.png');
@@ -632,6 +634,21 @@ footer p {
     vertical-align: middle;
 }
 
+/* ===============================
+   PAYPAL BUTTON
+   =============================== */
+
+
+.widget.paypalbuynow .widget.button.paypal {
+   border: 1px solid darken(@color-swatch3,5%);
+  -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+    border-radius: 30px;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
+  letter-spacing: 1px;
+  text-shadow: none;
+}
+
 
 /* ===============================
    BUTTON CSS
@@ -658,7 +675,6 @@ footer p {
   text-decoration: none;
   letter-spacing: 1px;
   text-shadow: none;
-  border: 1px solid darken(@color-swatch3,5%);
 }
 
 .widget.button button:hover 
