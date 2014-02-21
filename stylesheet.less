@@ -12,71 +12,6 @@ body {
     margin: 0 5%;
 }
 
-a {
-  font-family:@font-swatch2-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight:@font-swatch5-font-weight;
-  color:@color-swatch3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5, p {
-  margin: 0;
-  padding: 0 0 10px;
-}
-
-h1 {
-  font-family:@font-swatch1-font-family;
-  font-weight: @font-swatch1-font-weight;
-  color:@font-swatch1-color;
-  line-height:@font-swatch1-line-height;
-  letter-spacing: @font-swatch1-letter-spacing;
-  font-size: @font-swatch1-font-size;
-}
-
-h2
-{
-  font-family:@font-swatch2-font-family;
-  font-size: @font-swatch2-font-size;
-  font-weight: @font-swatch2-font-weight;
-  line-height:@font-swatch2-line-height;
-  color: @font-swatch2-color;
-  letter-spacing: @font-swatch2-letter-spacing;
-}
-
-h3
-{
-  font-family:@font-swatch3-font-family;
-  font-size:@font-swatch3-font-size;
-  font-weight: @font-swatch3-font-weight;
-  color: @font-swatch3-color;
-  line-height:@font-swatch3-line-height;
-  letter-spacing: @font-swatch3-letter-spacing;
-}
-
-h4
-{
-  font-family:@font-swatch4-font-family;
-  font-size:@font-swatch4-font-size;
-  font-weight:@font-swatch4-font-weight;
-  line-height:@font-swatch4-line-height;
-  color:@font-swatch4-color;
-  letter-spacing: @font-swatch4-letter-spacing;
-}
-
-p
-{
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:@font-swatch5-color;
-  letter-spacing: @font-swatch5-letter-spacing;
-}
 
 blockquote {
   background: none;
@@ -95,7 +30,7 @@ blockquote {
   font-family: georgia;
   color:darken(@color-swatch2,15%);
   content:open-quote;
-  font-size:4em;
+  font-size:3em;
   line-height:.1em;
   margin-right:.1em;
   vertical-align:-.4em;
@@ -638,21 +573,6 @@ footer p {
 
 
 .widget.paypalbuynow .widget.button.paypal {
-   border: 1px solid darken(@color-swatch3,5%);
-  -webkit-border-radius: 30px;
-   -moz-border-radius: 30px;
-    border-radius: 30px;
-  box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
-  letter-spacing: 1px;
-  text-shadow: none;
-}
-
-/* ===============================
-   DROPBOX BUTTON
-   =============================== */
-
-
-.widget.dropbox button {
    border: 1px solid darken(@color-swatch3,5%);
   -webkit-border-radius: 30px;
    -moz-border-radius: 30px;
@@ -1231,73 +1151,72 @@ textarea {
     font-weight: bold;
 }
 
-
 /* ===============================
-   SIGNUPFORM WIDGET
+  BLOG
    =============================== */
 
-.widget.signupform fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
+.widget {
+    &.bloglistposts {
+        .blog-post-item {
+            border-bottom: 1px dotted @color-swatch5;
+        }
+
+    }
 }
 
-.widget.signupform fieldset label {
-    width: 100%;
+.blog-post-item {
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.blog-post-metadata {
+    background-color: transparent;
+    background-image: none;
+    margin-top: 0;
+    text-align: left;
+}
+
+.blog-list-footer {
+    background-color: transparent;
+    background-image: none;
+}
+
+.blog-post-more-link {
     float: left;
-    font-family:@font-swatch4-font-family;
-    font-size:@font-swatch4-font-size;
-    font-weight:@font-swatch4-font-weight;
-    line-height:@font-swatch4-line-height;
-    color:@font-swatch4-color;
-    letter-spacing: @font-swatch4-letter-spacing;
+    width: 100%;
 }
 
-.widget.signupform fieldset input {
-    height: 40px;
-    width: 73%;
-    border: 2px solid @color-swatch5;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
-    text-indent: 8px;
-    margin-top: 6px;
-    margin-bottom: 30px;
-    padding: 0;
-    float:left;
-    background-color: @color-swatch1;
+/* BLOG SEARCH */
+.blogsearch {
+    form {
+        button {
+            padding: 10px;
+            color: @font-swatch7-color;
+            font-size: @font-swatch6-font-size;
+            font-weight: @font-swatch6-font-weight;
+            line-height: @font-swatch6-line-height;
+            background-color: @font-swatch7-background-color;
+            border: none;
+        }
+    }
 }
 
-.widget.signupform fieldset button.btn {
-    width: 24%;
-    height: 40px;
-    float:right;
-    padding: 1px;
-    margin-top: 6px;
-    border: 1px solid darken(@color-swatch3,5%);
-    -webkit-border-radius: 30px;
-       -moz-border-radius: 30px;
-            border-radius: 30px;
-    box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
-    font-family: @font-swatch7-font-family;
-    font-size: @font-swatch7-font-size;
-    font-weight:@font-swatch7-font-weight;
-    background-color: @font-swatch7-background-color;
-    color: @font-swatch7-color;
-    text-decoration: none;
-    letter-spacing: 1px;
-    text-shadow: none;
 
-}
 
-.widget.signupform fieldset button.btn:hover {
-    background-color: @font-swatch7-background-color-hover;
-    cursor: pointer;
-}
 
 
 /* ===============================
@@ -1311,8 +1230,9 @@ textarea {
 .widget.tweet a {
   padding: 8px 13px 8px 38px;
   margin: 0;
+  background-image: image('/images/twitter.png');
   background-repeat: no-repeat;
-  background-position: 13px 7px;
+  background-position: 13px 12px;
   margin: 2.2em auto;
   -webkit-border-radius: 30px;
      -moz-border-radius: 30px;
