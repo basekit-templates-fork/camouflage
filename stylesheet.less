@@ -245,7 +245,11 @@ footer p {
 }
 
 .widget.extendednavigation a.pull {
-  top:-50px;
+  top:0;
+  &:after {
+	  top: 11px;
+	  right: 6px
+  }
 }
 
 .widget.extendednavigation ul li a:hover {
@@ -1810,6 +1814,7 @@ footer .widget.profile .twitter span {
     display: block;
     float: left;
     width: 100%;
+    min-height: 40px;
   }
 
   #page-zones__template-widgets__extendednavigation-navigationheader {
@@ -1820,6 +1825,7 @@ footer .widget.profile .twitter span {
 
   
  .widget .extendednavigation ul {
+ 	padding-top: 40px;
     width: 100%;
     display: none;
     margin: 0;
@@ -1828,6 +1834,10 @@ footer .widget.profile .twitter span {
   .widget.extendednavigation ul li {
   border-bottom: 1px solid lighten(@color-swatch2,15%);
   padding: 16px 0;
+  	&:first-child {
+	  	    border-top: 1px solid lighten(@color-swatch2,15%);
+
+  	}
   }
 
   .widget.extendednavigation ul li:hover .text {
