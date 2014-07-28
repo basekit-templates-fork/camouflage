@@ -110,8 +110,8 @@ header {
 /* COMPANY NAME */
 
 .widget.companyname {
-  display: inline;
-  margin-top: 13px;
+  display: inline-block;
+  padding-top: 13px;
 }
 
 .widget.companyname a {
@@ -129,6 +129,7 @@ header {
   display: block;
   float: left;
   margin-right: 8px;
+  line-height: 0;
 }
 
 
@@ -239,7 +240,7 @@ footer p {
 .widget.extendednavigation {
   float: right;
   position: relative;
-  padding-top: 7px;
+  padding-top: 16px;
   width: 65%;
 }
 
@@ -1788,7 +1789,7 @@ footer .widget.profile .twitter span {
   }
 
   .widget.companyname {
-    margin-top:21px;
+    padding-top: 16px;
   }
 
   .widget.companyname a {
@@ -1822,7 +1823,6 @@ footer .widget.profile .twitter span {
     width: 100%;
     display: none;
     margin: 0;
-    border-top: 1px solid lighten(@color-swatch2,15%);
   }
 
   .widget.extendednavigation ul li {
