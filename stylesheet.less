@@ -414,9 +414,12 @@ header {
 	height: 500px; 
  }
 
-.widget.feature .content {
+.widget.feature .feature-bgimg .content {
 	height: 500px;
 	text-align: center;
+	button.btn {
+		margin-top: 10px;
+	}
 }
 
 /* FEATURE TITLE */
@@ -526,7 +529,7 @@ header {
 	vertical-align: middle;
 }
 
-.widget.feature.btn-top-right button{
+.widget.feature.btn-top-right button {
 	vertical-align: middle;
 }
 
@@ -780,6 +783,9 @@ hr.line.align-right {
 	a {
 		.p-font;
 	color: @color-swatch2;
+	}
+	p {
+		display: inline;
 	}
 }
 
@@ -1275,12 +1281,19 @@ textarea {
 /* ===============================
 	 SOCIAL BAR WIDGET
 	 =============================== */
+.widget.socialicons,
+.widget.profile,
+.widget.youtube {
+	.clearfix;
+	clear: both;
+}
 
 .widget.socialicons span a,
 .widget.profile .bk-profile-socialicons span a {
 	background-color: @color-swatch1;
 	border: 2px solid darken(@color-swatch1, 20%);
 	border-radius: 100%;
+	text-indent: 9999px;
 	&:hover {
 		background-color: @color-swatch3;
 		border-color: darken(@color-swatch3, 20%);

@@ -3,6 +3,7 @@
 	"thumbnail":"trvl.png",
 	"screenshot":"trvl.png",
 	"templateType":"standard",
+	"pageTypes":["home"],
     "tags": {
     "en": ["colorful", "bright", "travel", "business", "holiday", "colourful", "stylish", "agency", "magazine", "creative", "elegant", "professional", "sophisticated", "media", "sans-serif"],
     "es": ["colorido", "claro", "turismo", "corporativo", "vacaciones", "estilo", "agencia", "revista", "creativo", "elegante", "profesional", "sofisticado", "comunicacion", "sans-serif"],
