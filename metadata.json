@@ -1,7 +1,7 @@
 {
-	"name":"Trvl",
-	"thumbnail":"trvl.png",
-	"screenshot":"trvl.png",
+	"name":"Camouflage",
+	"thumbnail":"camouflage.png",
+	"screenshot":"camouflage.png",
 	"templateType":"standard",
 	"pageTypes":["home"],
     "tags": {
@@ -12,11 +12,11 @@
 	"colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#f5f1e7",
-            "color2":"#e08e79",
-            "color3":"#809999",
-            "color4":"#63524d",
-            "color5":"#9e9597",
+            "color1":"#ffffff",
+            "color2":"#575647",
+            "color3":"#372602",
+            "color4":"#4D4331",
+            "color5":"#000000",
             "color6":"#515050",
             "color7":"#f5f1e6"
         },
