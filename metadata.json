@@ -60,7 +60,7 @@
     "fontSwatch": {
        "title": "Lato",
         "font1": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "30px",
             "font-weight": "400",
             "line-height": "36px",
@@ -68,7 +68,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "24px",
             "font-weight": "inherit",
             "line-height": "36px",
@@ -76,7 +76,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "20px",
             "font-weight": "inherit",
             "line-height": "34px",
@@ -84,7 +84,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "18px",
             "font-weight": "inherit",
             "line-height": "34px",
@@ -137,7 +137,7 @@
             "letter-spacing": "inherit"
         },
          "font10": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "28px",
             "font-weight": "400",
             "line-height": "36px",
