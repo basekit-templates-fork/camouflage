@@ -59,6 +59,11 @@ ul, ol, li {
 	text-indent: -1.4em;
 }
 
+.expand .more, .expand .less {
+	color: @color-swatch1;
+	cursor: pointer;
+}
+
 /* ===============================
 	 CUSTOM CSS
 	 =============================== */
@@ -1077,6 +1082,14 @@ textarea {
 	line-height: 0;
 }
 
+.blog-post-feature-image-wrap {
+	background-image: none !important;
+	margin-bottom: 20px;
+	img {
+		max-height: 500px;
+	}
+}
+
 .blog-post-sharing {
 	.btn {
 		margin-right: 10px;
@@ -1463,6 +1476,14 @@ textarea {
 .widget.ecomproductslist .productlist-filter .productlist-display-form .form-group {
 	display: block;
 	margin: 0 0 20px;
+}
+
+.widget.ecomproductslist .ecom-productslist-image-wrap {
+	background-color: transparent;
+}
+
+.ecom-product-variation {
+	margin-bottom: 20px;
 }
 
 .form-group.productlist-search {
