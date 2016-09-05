@@ -1,65 +1,111 @@
 {
-	"name":"Camouflage",
-	"thumbnail":"camouflage.png",
-	"screenshot":"camouflage.png",
-	"templateType":"standard",
-	"pageTypes":["home"],
+    "name": "Camouflage",
+    "thumbnail": "camouflage.png",
+    "screenshot": "camouflage-screenshot.jpg",
+    "templateType": "standard",
+    "pageTypes": [
+        "home"
+    ],
     "tags": {
-    "en": ["colorful", "bright", "travel", "business", "holiday", "colourful", "stylish", "agency", "magazine", "creative", "elegant", "professional", "sophisticated", "media", "sans-serif"],
-    "es": ["colorido", "claro", "turismo", "corporativo", "vacaciones", "estilo", "agencia", "revista", "creativo", "elegante", "profesional", "sofisticado", "comunicacion", "sans-serif"],
-    "br": ["colorido", "claro", "turismo", "corporativo", "ferias", "estilo", "agência", "revista", "criativo", "elegante", "profissional", "sofisticado", "mídia", "sans-serif"]
+        "en": [
+            "colorful",
+            "bright",
+            "travel",
+            "business",
+            "holiday",
+            "colourful",
+            "stylish",
+            "agency",
+            "magazine",
+            "creative",
+            "elegant",
+            "professional",
+            "sophisticated",
+            "media",
+            "sans-serif"
+        ],
+        "es": [
+            "colorido",
+            "claro",
+            "turismo",
+            "corporativo",
+            "vacaciones",
+            "estilo",
+            "agencia",
+            "revista",
+            "creativo",
+            "elegante",
+            "profesional",
+            "sofisticado",
+            "comunicacion",
+            "sans-serif"
+        ],
+        "br": [
+            "colorido",
+            "claro",
+            "turismo",
+            "corporativo",
+            "ferias",
+            "estilo",
+            "ag\u00eancia",
+            "revista",
+            "criativo",
+            "elegante",
+            "profissional",
+            "sofisticado",
+            "m\u00eddia",
+            "sans-serif"
+        ]
     },
-	"colorSwatches":
-    {
+    "colorSwatches": {
         "Swatch 1": {
-
-            "color1":"#ffffff",
-            "color2":"#575647",
-            "color3":"#372602",
-            "color4":"#4D4331",
-            "color5":"#000000",
-            "color6":"#C66C05",
-            "color7":"#f5f1e6"
+            "color1": "#ffffff",
+            "color2": "#575647",
+            "color3": "#372602",
+            "color4": "#4D4331",
+            "color5": "#000000",
+            "color6": "#C66C05",
+            "color7": "#f5f1e6"
         },
         "Swatch 2": {
-            "color1":"#f5f1e7",
-            "color2":"#809999",
-            "color3":"#c26b57",
-            "color4":"#63524d",
-            "color5":"#9e9597",
-            "color6":"#515050",
-            "color7":"#f5f1e6"
+            "color1": "#f5f1e7",
+            "color2": "#809999",
+            "color3": "#c26b57",
+            "color4": "#63524d",
+            "color5": "#9e9597",
+            "color6": "#515050",
+            "color7": "#f5f1e6"
         },
         "Swatch 3": {
-            "color1":"#f9f6f4",
-            "color2":"#63524d",
-            "color3":"#809999",
-            "color4":"#57463B",
-            "color5":"#9e9597",
-            "color6":"#5f2109",
-            "color7":"#f5f1e7"
+            "color1": "#f9f6f4",
+            "color2": "#63524d",
+            "color3": "#809999",
+            "color4": "#57463B",
+            "color5": "#9e9597",
+            "color6": "#5f2109",
+            "color7": "#f5f1e7"
         },
         "Swatch 4": {
-            "color1":"#f5f1e7",
-            "color2":"#ee9970",
-            "color3":"#2c97a1",
-            "color4":"#57463B",
-            "color5":"#9e9597",
-            "color6":"#5f2109",
-            "color7":"#f5f1e7"
+            "color1": "#f5f1e7",
+            "color2": "#ee9970",
+            "color3": "#2c97a1",
+            "color4": "#57463B",
+            "color5": "#9e9597",
+            "color6": "#5f2109",
+            "color7": "#f5f1e7"
         },
         "Swatch 5": {
-            "color1":"#f5f1e7",
-            "color2":"#a68d82",
-            "color3":"#83b1b3",
-            "color4":"#63524d",
-            "color5":"#9e9597",
-            "color6":"#515050",
-            "color7":"#f5f1e6"
+            "color1": "#f5f1e7",
+            "color2": "#a68d82",
+            "color3": "#83b1b3",
+            "color4": "#63524d",
+            "color5": "#9e9597",
+            "color6": "#515050",
+            "color7": "#f5f1e6"
         }
     },
     "fontSwatch": {
-       "title": "Lato",
+        "title": "Lato",
         "font1": {
             "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "30px",
@@ -137,7 +183,7 @@
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
-         "font10": {
+        "font10": {
             "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "28px",
             "font-weight": "400",
